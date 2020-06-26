@@ -21,6 +21,7 @@ class UI {
     console.log('hello world!')
     const value = this.budgetInput.value;
     if (value < 0 || value === "") {
+      this.budgetFeedback.classList.add("showItem");
       
     }
   }
