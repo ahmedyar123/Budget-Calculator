@@ -127,8 +127,8 @@ class UI {
     this.expenseInput.value = expense[0].title;
     this.amountInput.value = expense[0].amount;
     //remove from the list
-    let tempList = this.itemList.filter(function (item) {
-      return item.id !== id;
+    let tempList = this.itemList.filter(function (expense) {
+      return expense.id !== id;
     });
     this.itemList = tempList;
     this.showBalance();
@@ -140,8 +140,8 @@ class UI {
     //remove from dom
     this.expenseList.removeChild(parent);
     //remove from the list
-    let tempList = this.itemList.filter(function (item) {
-      return item.id !== id;
+    let tempList = this.itemList.filter(function (expense) {
+      return expense.id !== id;
     });
     this.itemList = tempList;
     this.showBalance();
