@@ -71,7 +71,6 @@ class UI {
         title: expenseValue,
         amount: amount,
       };
-
       this.itemID++;
       this.itemList.push(expense);
       this.addExpense(expense);
@@ -115,6 +114,7 @@ class UI {
   }
   //edit expense
   editExpense(element) {
+    debugger;
     let id = parseInt(element.dataset.id);
     let parent = element.parentElement.parentElement.parentElement;
     //remove from dom
